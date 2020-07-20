@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "737f6e54-6dee-478c-bac8-deb524277cd3",
+		"name": "GetStudentApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Student Data",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "3.250.27.204:8443/apiJava8artifact-0.0.1-SNAPSHOT/student/allstudent",
+					"host": [
+						"3.250.27.204"
+					],
+					"port": "8443",
+					"path": [
+						"student",
+						"allstudent"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "70562196-e7aa-41d9-b88d-22be188ad823",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a6cc18c8-1d34-41eb-89b6-e00e71716625",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function(){",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "bc0f81b8-6cc0-4853-b14e-115bcd7008f4",
+		"name": "StudentApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Student Data",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://52.53.163.38:8443/apiJava8artifact-0.0.1-SNAPSHOT/student/allstudent",
+					"host": [
+						"52.53.163.38"
+					],
+					"port": "8443",
+					"path": [
+						"apiJava8artifact-0.0.1-SNAPSHOT",
+						"student",
+						"allstudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://52.53.163.38:8443/apiJava8artifact-0.0.1-SNAPSHOT/delete/student",
+					"host": [
+						"52.53.163.38"
+					],
+					"port": "8443",
+					"path": [
+						"apiJava8artifact-0.0.1-SNAPSHOT",
+						"delete",
+						"student"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2e9a302d-a731-43d9-bfc1-e73d919496d1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9081786c-8936-4480-a4d4-b47abe87caea",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function(){",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
