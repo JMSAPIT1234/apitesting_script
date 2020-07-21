@@ -14,9 +14,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.53.163.38:8443/apiJava8artifact-0.0.1-SNAPSHOT/student/allstudent",
+					"raw": "http://54.176.28.154:8443/apiJava8artifact-0.0.1-SNAPSHOT/student/allstudent",
 					"host": [
-						"52.53.163.38"
+						"54.176.28.154"
 					],
 					"port": "8443",
 					"path": [
@@ -34,9 +34,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.53.163.38:8443/apiJava8artifact-0.0.1-SNAPSHOT/delete/student",
+					"raw": "http://54.176.28.154:8443/apiJava8artifact-0.0.1-SNAPSHOT/delete/student",
 					"host": [
-						"52.53.163.38"
+						"54.176.28.154"
 					],
 					"port": "8443",
 					"path": [
