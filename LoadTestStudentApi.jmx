@@ -60,7 +60,7 @@
               <threadName>true</threadName>
               <dataType>true</dataType>
               <encoding>false</encoding>
-              <assertions>true</assertions>
+              <assertions>false</assertions>
               <subresults>true</subresults>
               <responseData>false</responseData>
               <samplerData>false</samplerData>
